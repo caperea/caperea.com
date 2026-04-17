@@ -474,6 +474,16 @@ section {
     margin-top: 32px;
 }
 
+.screenshot-grid.phone {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 200px));
+    justify-content: center;
+    gap: 16px;
+}
+
+.screenshot-grid.phone .screenshot {
+    border-radius: 28px;
+}
+
 .screenshot {
     width: 100%;
     border-radius: var(--radius-md);
