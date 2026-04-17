@@ -3,56 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rando — Dice &amp; Decision Maker — Caperea Studio</title>
+    <meta name="description" content="Rando is a dice roller and decision maker for iPhone and iPad. Roll, pick, and settle it with a tap.">
+    <link rel="icon" type="image/webp" href="images/caperea%20logo.webp">
+    <link rel="apple-touch-icon" href="images/rando-icon.webp">
+    <link rel="canonical" href="https://caperea.com/rando.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rando — Dice &amp; Decision Maker">
+    <meta property="og:description" content="Dice roller and decision maker for iPhone and iPad.">
+    <meta property="og:url" content="https://caperea.com/rando.html">
+    <meta property="og:image" content="https://caperea.com/images/rando-icon.webp">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles.css">
-    <title>Rando - Random Number Generator - Caperea Studio</title>
 </head>
 <body>
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+        <div class="nav">
+            <a href="index.html" class="nav-brand">
+                <img src="images/caperea%20logo.webp" alt="" decoding="async">
+                <span>Caperea Studio</span>
+            </a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="calculator.html">Calculator</a>
+                <a href="rando.html">Rando</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+        <nav class="nav-mobile" aria-label="Mobile">
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="rando.html">Rando</a>
+            <a href="privacy-policy.html">Privacy</a>
+        </nav>
+    </header>
 
     <main>
         <section class="app-hero">
             <div class="container">
-                <div class="app-hero-content">
-                    <img src="images/rando-icon.webp" alt="Rando" class="app-hero-icon">
-                    <div class="app-hero-info">
-                        <h1>Rando</h1>
-                        <p class="app-tagline">Simple and elegant random number generator</p>
-                        <div class="app-actions">
-                            <a href="https://apps.apple.com/us/app/rando-for-random-numbers/id6739487174" class="button primary">Download on App Store</a>
-                            <span class="price">Free</span>
-                        </div>
-                    </div>
+                <img src="images/rando-icon.webp" alt="Rando" class="app-hero-icon">
+                <h1>Rando</h1>
+                <p class="app-tagline">Dice and a decision maker, in your pocket.</p>
+                <div class="button-row">
+                    <a href="https://apps.apple.com/us/app/rando-dice-decision-maker/id6739487174" class="button primary">Download on the App Store</a>
                 </div>
             </div>
         </section>
 
-        <section class="app-features-section">
+        <section class="features">
             <div class="container">
-                <h2>Features</h2>
+                <h2 class="section-title">Features</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <h3>Simple & Clean</h3>
-                        <p>Beautiful and intuitive interface that makes generating random numbers effortless</p>
+                        <h3>Simple &amp; clean</h3>
+                        <p>A beautiful, intuitive interface that makes generating random numbers effortless.</p>
                     </div>
                     <div class="feature-card">
-                        <h3>Customizable Range</h3>
-                        <p>Generate random numbers within your specified minimum and maximum values</p>
+                        <h3>Customizable range</h3>
+                        <p>Set the minimum and maximum to match whatever you're picking from.</p>
                     </div>
                     <div class="feature-card">
-                        <h3>Multiple Numbers</h3>
-                        <p>Generate multiple random numbers at once with just one tap</p>
+                        <h3>Roll multiple</h3>
+                        <p>Roll several dice or pick several numbers at once with a single tap.</p>
                     </div>
                     <div class="feature-card">
                         <h3>History</h3>
-                        <p>Keep track of your previously generated numbers</p>
+                        <p>Keep track of your rolls and picks so nothing gets lost.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="app-requirements">
+        <section class="requirements">
             <div class="container">
-                <h2>Requirements</h2>
+                <h2 class="section-title">Requirements</h2>
                 <ul class="requirements-list">
                     <li>iOS 17.0 or later</li>
                     <li>Compatible with iPhone and iPad</li>
@@ -61,7 +84,16 @@
         </section>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <footer class="site-footer">
+        <div class="container">
+            <div>&copy; 2026 Caperea Studio</div>
+            <div class="footer-links">
+                <a href="mailto:badtoyx@gmail.com">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

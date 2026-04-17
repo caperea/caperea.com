@@ -1,15 +1,20 @@
-# iOS App Studio Website
+# Caperea Studio
 
-This is the official website for our iOS App Studio, showcasing our apps and team members.
+Marketing site for [caperea.com](https://caperea.com). A small studio making elegant apps for Apple devices.
 
-## Pages
-- Home: Introduction to our studio
-- Apps: Showcase of our iOS applications
-- Team: Meet our development team
-- Contact: Get in touch with us
+## Apps
 
-## Development
-This website is built with HTML, CSS, and JavaScript.
+- **Calculator HD for iPad** — a powerful calculator for iPad. [App Store](https://apps.apple.com/us/app/calculator-hd-for-ipad/id760018895).
+- **Rando** — dice and decision maker. [App Store](https://apps.apple.com/us/app/rando-dice-decision-maker/id6739487174).
 
-## Hosting
-This website is hosted on GitHub Pages.
+## Stack
+
+Static HTML, CSS and a tiny bit of JS. Hosted on GitHub Pages.
+
+## Local preview
+
+```sh
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.

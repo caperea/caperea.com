@@ -3,73 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caperea Studio — Beautiful apps for Apple devices</title>
+    <meta name="description" content="Caperea Studio makes elegant, focused apps for iPhone, iPad and Mac. Meet Calculator Pro and Rando.">
+    <link rel="icon" type="image/webp" href="images/caperea%20logo.webp">
+    <link rel="apple-touch-icon" href="images/caperea%20logo.webp">
+    <link rel="canonical" href="https://caperea.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Caperea Studio — Beautiful apps for Apple devices">
+    <meta property="og:description" content="Elegant, focused apps for iPhone, iPad and Mac.">
+    <meta property="og:url" content="https://caperea.com/">
+    <meta property="og:image" content="https://caperea.com/images/caperea%20logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="styles.css">
-    <title>Caperea Studio - Beautiful Apps for Apple Devices</title>
 </head>
 <body>
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+        <div class="nav">
+            <a href="index.html" class="nav-brand">
+                <img src="images/caperea%20logo.webp" alt="" decoding="async">
+                <span>Caperea Studio</span>
+            </a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="calculator.html">Calculator</a>
+                <a href="rando.html">Rando</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+        <nav class="nav-mobile" aria-label="Mobile">
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="rando.html">Rando</a>
+            <a href="privacy-policy.html">Privacy</a>
+        </nav>
+    </header>
 
     <main>
-        <section class="hero-section">
+        <section class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1>Beautiful Apps for Apple Devices</h1>
-                    <p>We craft elegant and powerful applications for macOS and iOS that help you work smarter and more efficiently.</p>
-                    <div class="hero-cta">
-                        <a href="apps.html" class="button primary">View Our Apps</a>
-                    </div>
+                <h1>Beautifully crafted<br>apps for Apple devices.</h1>
+                <p class="lead">A small studio making focused, elegant software for iPhone, iPad and Mac.</p>
+                <div class="button-row">
+                    <a href="#apps" class="button primary">Explore Apps</a>
                 </div>
             </div>
         </section>
 
-        <section class="featured-app">
+        <section id="apps">
             <div class="container">
-                <div class="app-showcase">
-                    <div class="app-info">
-                        <img src="images/calculator-icon.webp" alt="Calculator Pro" class="app-icon">
-                        <div class="app-details">
-                            <h2>Calculator Pro</h2>
-                            <p>A powerful calculator designed specifically for professionals. With a clean interface and advanced mathematical functions, it's the perfect tool for students, professionals, and anyone who needs reliable calculations.</p>
-                            <ul class="app-features">
-                                <li>Clean and intuitive interface</li>
-                                <li>Scientific calculator functions</li>
-                                <li>Unit conversions</li>
-                                <li>History and memory functions</li>
-                            </ul>
-                            <a href="apps.html" class="button">Learn More</a>
+                <h2 class="section-title">Our Apps</h2>
+                <div class="app-grid">
+                    <article class="app-card">
+                        <img src="images/calculator-icon.webp" alt="Calculator HD for iPad" class="app-icon">
+                        <h3>Calculator HD for iPad</h3>
+                        <p>A powerful calculator with a clean interface, scientific functions, unit conversion and calculation history.</p>
+                        <div class="app-card-footer">
+                            <a href="calculator.html" class="button ghost">Learn more</a>
+                            <a href="https://apps.apple.com/us/app/calculator-hd-for-ipad/id760018895" class="button">App Store</a>
                         </div>
-                    </div>
-                    <div class="app-preview">
-                        <img src="images/calculator-screenshot1.webp" alt="Calculator Pro Screenshot" class="app-screenshot">
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </article>
 
-        <section class="other-apps">
-            <div class="container">
-                <h2>More Apps</h2>
-                <div class="apps-grid">
-                    <div class="app-card">
-                        <h3>Notes Master</h3>
-                        <p>The perfect note-taking app for professionals and students alike. Organize your thoughts with style.</p>
-                        <a href="apps.html" class="button secondary">Learn More</a>
-                    </div>
-                    <div class="app-card">
-                        <h3>Time Tracker</h3>
-                        <p>Track your time and boost productivity with our intuitive time management app.</p>
-                        <a href="apps.html" class="button secondary">Learn More</a>
-                    </div>
-                    <div class="app-card">
+                    <article class="app-card">
+                        <img src="images/rando-icon.webp" alt="Rando" class="app-icon">
                         <h3>Rando</h3>
-                        <p>Generate random numbers easily with this simple and elegant random number generator.</p>
-                        <a href="rando.html" class="button secondary">Learn More</a>
-                    </div>
+                        <p>Dice and a decision maker in your pocket. Tap to roll, pick, or settle it.</p>
+                        <div class="app-card-footer">
+                            <a href="rando.html" class="button ghost">Learn more</a>
+                            <a href="https://apps.apple.com/us/app/rando-dice-decision-maker/id6739487174" class="button">App Store</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <div id="footer-placeholder"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>&copy; 2026 Caperea Studio</div>
+            <div class="footer-links">
+                <a href="mailto:badtoyx@gmail.com">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

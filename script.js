@@ -1,32 +1,18 @@
-// JavaScript for future interactivity can be added here
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.nav-toggle');
+    const mobileNav = document.querySelector('.nav-mobile');
 
-// Mobile menu functionality
-document.addEventListener('DOMContentLoaded', function() {
-    // Load header
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
+    if (toggle && mobileNav) {
+        toggle.addEventListener('click', () => {
+            const isOpen = mobileNav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
         });
 
-    // Load footer
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
-
-    setupMobileMenu();
-});
-
-function setupMobileMenu() {
-    const mobileMenuButton = document.querySelector('.mobile-menu-button');
-    const mobileNav = document.querySelector('.mobile-nav');
-
-    if (mobileMenuButton && mobileNav) {
-        mobileMenuButton.addEventListener('click', function() {
-            mobileNav.classList.toggle('active');
-            mobileMenuButton.classList.toggle('active');
+        mobileNav.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
         });
     }
-}
+});
